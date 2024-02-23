@@ -213,6 +213,21 @@ img {
     margin: 10px auto;
 }
 
+h1 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: bold;
+}
+
+#datos1 {
+    text-align: center;
+    margin: 20px;
+}
+
+#borrar {
+    text-align: center;
+}
+
 th {
     text-align: center;
     padding: 10px;

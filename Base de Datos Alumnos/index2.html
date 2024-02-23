@@ -14,31 +14,38 @@
             </div>
         </header>                                                               
 
-        <form id="formulario">                                                  <!--Formulario para dar de altas-->
-            <p>Llene los parámetros solicitados con su información</p>
+        <section class="llenado">
+            <form id="formulario">                                                  <!--Formulario para dar de altas-->
+                <h1>Alta de Alumnos</h1>
+                <p>Complete los datos solicitados:</p>
 
-            <label for="pN"> Primer Nombre: </label>
-            <input type="text" id="nombre" name="nombre" >
+                <div id="datos1">
+                    <label for="pN"> Primer Nombre: </label>
+                    <input type="text" id="nombre" name="nombre" >
 
-            <label for="sN"> Segundo Nombre: </label>
-            <input type="text" id="segNombre" name="segNombre">
+                    <label for="sN"> Segundo Nombre: </label>
+                    <input type="text" id="segNombre" name="segNombre">
+                </div>
 
-            <label for="pA"> Primer Apellido: </label>
-            <input type="text" id="apellidoP" name="apellidoP" >
+                <div id="datos1">
+                    <label for="pA"> Primer Apellido: </label>
+                    <input type="text" id="apellidoP" name="apellidoP" >
 
-            <label for="sA"> Segundo Apellido: </label>
-            <input type="text" id="apellidoM" name="apellidoM" >
+                    <label for="sA"> Segundo Apellido: </label>
+                    <input type="text" id="apellidoM" name="apellidoM" >
+                    
+                    <label for="e"> Edad: </label>
+                    <input type="text" id="edad" name="edad" >
 
-            <label for="e"> Edad: </label>
-            <input type="text" id="edad" name="edad" >
+                    <button type="submit">Dar de Alta</button>                          <!--Botón para dar el alta-->
+                </div>            
+            </form>
 
-            <button type="submit">Dar de Alta</button>                          <!--Botón para dar el alta-->
-        
-        </form>
+            <form id="borrar">                                                      <!--Forma para decorar espacio de botón-->
+                <button type="submit">Borrar</button>                               <!--Botón para borrar el Local Storage-->
+            </form>
 
-        <form id="borrar">                                                      <!--Forma para decorar espacio de botón-->
-            <button type="submit">Borrar</button>                               <!--Botón para borrar el Local Storage-->
-        </form>
+        </section>
 
         <div class="formatoTabla">
             <table id="tabla1">
