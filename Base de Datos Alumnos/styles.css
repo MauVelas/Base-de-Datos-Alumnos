@@ -1,10 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Silkscreen:wght@400;700&display=swap');
+
 .image {
     text-align: center;
+    background-color: #daf3f6;
+    border: solid #daf3f6;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: bold;
 }
 
 .barraNav {
-    background-color: orange;
+    background-color: rgb(255, 174, 53);
     text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-style: bold;
+    height: 60px;
 }
 
 .b0 {
@@ -12,23 +23,55 @@
 }
 
 .b1 {
-    width: 88px;
+    width: 95px;
+    height: 27px;
+    margin-top: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .b2 {
-    width: 97px;
+    width: 105px;
+    height: 27px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .b3 {
-    width: 101px;
+    width: 107px;
+    height: 27px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .b4 {
     width: 88px;
+    height: 27px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .b5 {
-    width: 107px;
+    width: 115px;
+    height: 27px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.barra {
+    margin: 10px;
+    margin-left: 550px;
+    height: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.images {
+    text-align: end;
+}
+
+.promocion {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+img {
+    border-radius: 25px;
+    margin: 10px;
 }
 
 #bNosotros {
@@ -166,11 +209,6 @@
     background-color: #00A4BD;
 }
 
-.barra {
-    margin: 10px;
-    margin-left: 600px;
-}
-
 .formatoTabla table {
     margin: 10px auto;
 }
@@ -188,5 +226,10 @@ tr {
 }
 
 footer {
-    border: yellow 5px solid;   
+    background-color: rgb(147, 246, 97);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    color: rgb(1, 57, 50);
 }
