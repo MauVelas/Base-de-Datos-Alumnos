@@ -1,0 +1,192 @@
+.image {
+    text-align: center;
+}
+
+.barraNav {
+    background-color: orange;
+    text-align: center;
+}
+
+.b0 {
+    margin: 10px;
+}
+
+.b1 {
+    width: 88px;
+}
+
+.b2 {
+    width: 97px;
+}
+
+.b3 {
+    width: 101px;
+}
+
+.b4 {
+    width: 88px;
+}
+
+.b5 {
+    width: 107px;
+}
+
+#bNosotros {
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+}
+
+#dNosotros {
+    display: none;
+    position: absolute;
+}
+
+#bNosotros:hover #dNosotros {
+    display: block;
+}
+
+#dNosotros a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+}
+
+#dNosotros a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+}
+
+#bConvocatoria {
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+}
+
+#dConvocatoria {
+    display: none;
+    position: absolute;
+}
+
+#bConvocatoria:hover #dConvocatoria {
+    display: block;
+}
+
+#dConvocatoria a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+}
+
+#dConvocatoria a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+}
+
+#bAlumnos {
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+}
+
+#dAlumnos {
+    display: none;
+    position: absolute;
+}
+
+#bAlumnos:hover #dAlumnos {
+    display: block;
+}
+
+#dAlumnos a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+}
+
+#dAlumnos a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+}
+
+#bCultura {
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+}
+
+#dCultura {
+    display: none;
+    position: absolute;
+}
+
+#bCultura:hover #dCultura {
+    display: block;
+}
+
+#dCultura a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+}
+
+#dCultura a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+}
+
+#bInternacional {
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+}
+
+#dInternacional {
+    display: none;
+    position: absolute;
+}
+
+#bInternacional:hover #dInternacional {
+    display: block;
+}
+
+#dInternacional a {
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+}
+
+#dInternacional a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+}
+
+.barra {
+    margin: 10px;
+    margin-left: 600px;
+}
+
+.formatoTabla table {
+    margin: 10px auto;
+}
+
+th {
+    text-align: center;
+    padding: 10px;
+    border: solid red 1px;
+} 
+
+tr {
+    text-align: center;
+    padding: 10px;
+    border: solid red 1px;
+}
+
+footer {
+    border: yellow 5px solid;   
+}

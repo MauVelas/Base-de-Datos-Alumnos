@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Altas</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>                                                                <!--Logo encabezado-->
+            <div class="image">
+                <img src="lobo.png" alt="logo" width="120px" height="100px" >   <!--Seleccionar imagen del ordenador y fijar medidas-->
+                <p>Suri's Academy</p>
+            </div>
+        </header>                                                               
+
+        <form id="formulario">                                                  <!--Formulario para dar de altas-->
+            <p>Llene los parámetros solicitados con su información</p>
+
+            <label for="pN"> Primer Nombre: </label>
+            <input type="text" id="nombre" name="nombre" >
+
+            <label for="sN"> Segundo Nombre: </label>
+            <input type="text" id="segNombre" name="segNombre">
+
+            <label for="pA"> Primer Apellido: </label>
+            <input type="text" id="apellidoP" name="apellidoP" >
+
+            <label for="sA"> Segundo Apellido: </label>
+            <input type="text" id="apellidoM" name="apellidoM" >
+
+            <label for="e"> Edad: </label>
+            <input type="text" id="edad" name="edad" >
+
+            <button type="submit">Dar de Alta</button>                          <!--Botón para dar el alta-->
+        
+        </form>
+
+        <form id="borrar">                                                      <!--Forma para decorar espacio de botón-->
+            <button type="submit">Borrar</button>                               <!--Botón para borrar el Local Storage-->
+        </form>
+
+        <div class="formatoTabla">
+            <table id="tabla1">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Segundo nombre</th>
+                    <th>Primer Apellido</th>
+                    <th>Segundo Apellido</th>
+                    <th>Edad</th>
+                    <th>Materia</th>
+                    <th>Calificación</th>
+                    <th>Inscripción</th>
+                </tr>
+            </table>        
+        </div>
+        
+        <!--<form id="nuevoAlumno">                                                      
+            <button type="submit">Nuevo Alumno</button>                              
+        </form> -->
+
+    </body>
+
+    <script src="./main.js"></script>
+</html>
