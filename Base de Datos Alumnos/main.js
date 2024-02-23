@@ -1,11 +1,11 @@
 class Alumno {
-    constructor(nombre, segNombre, apellidoP, apellidoM, edad, idAlumno) {
+    constructor(nombre, segNombre, apellidoP, apellidoM, edad, idAlumno, materiasInscritas) {
         this.nombre = nombre;
         this.segNombre = segNombre;
         this.apellidoP = apellidoP;
         this.apellidoM = apellidoM;
         this.edad = edad;
-        this.materiasInscritas = [];
+        this.materiasInscritas = materiasInscritas;
         this.grupo = null;
         this.idAlumno = idAlumno;
     }
@@ -36,13 +36,15 @@ altaAlumno.addEventListener("submit", function(event){                     //Cre
     const lName2 = document.getElementById("apellidoM").value
     const age = document.getElementById("edad").value                       //Lee lo que hay escrito en los recuadro en tiempo real
     const id = getId();                                                     //Llama a la función "getID"
+
+    /*const EE = arrayMaterias();
     
-    let dataAlumno = new Alumno(name, sName, lName1, lName2, age, id)           //Acomoda los datos leídos anteriormente en la clase "Alumno"
+    let dataAlumno = new Alumno(name, sName, lName1, lName2, age, id, EE)           //Acomoda los datos leídos anteriormente en la clase "Alumno"
 
     let parseArray = JSON.parse(localStorage.getItem("hola")) || [];        //Obtiene los valores del Local Storage(hola) y los regresa a objetos, si no hay ningún valor, crea un array vacio
     parseArray.push(dataAlumno);                                            //"Sube" los datos al array 'Alumno'
     let arrayJSON = JSON.stringify(parseArray);                             //Tranforma los objetos a formato "string" 
-    localStorage.setItem("hola", arrayJSON)                                 //Guarda en el Local Storage 
+    localStorage.setItem("hola", arrayJSON)                                 //Guarda en el Local Storage  */
 
     let tablaref = document.getElementById("tabla1");
     let newTable = tablaref.insertRow(-1);
@@ -84,6 +86,16 @@ altaAlumno.addEventListener("submit", function(event){                     //Cre
         materiaArray.push(experienciaEducativa);                                            
         let materiaJSON = JSON.stringify(materiaArray);                          
         localStorage.setItem("EE", materiaJSON); 
+
+
+        const EE = arrayMaterias();
+    
+        let dataAlumno = new Alumno(name, sName, lName1, lName2, age, id, EE)           //Acomoda los datos leídos anteriormente en la clase "Alumno"
+
+        let parseArray = JSON.parse(localStorage.getItem("hola")) || [];        //Obtiene los valores del Local Storage(hola) y los regresa a objetos, si no hay ningún valor, crea un array vacio
+        parseArray.push(dataAlumno);                                            //"Sube" los datos al array 'Alumno'
+        let arrayJSON = JSON.stringify(parseArray);                             //Tranforma los objetos a formato "string" 
+        localStorage.setItem("hola", arrayJSON)
     })
 })
 
@@ -102,13 +114,22 @@ function getId() {
     return newId;                                                           //Regresa el valor guardado
 }
 
-
-
-
-
-/*function arrayMaterias() {
+function arrayMaterias() {
     let arrayEE = JSON.parse(localStorage.getItem("EE")) || [];                 
     //arrayEE.push(experienciaEducativa);                                                                 
     localStorage.setItem("EE", JSON.stringify(arrayEE));  
     return arrayEE;   
-} */
+} 
+
+nuevoAlumno.addEventListener("submit", function(event){                         
+    event.preventDefault();
+
+    let inicializar = JSON.parse(localStorage.getItem("porfavor")) || [];   
+    let prueba1 = JSON.parse(localStorage.getItem("hola"));
+    prueba1.reverse();
+    let prueba2 = prueba1.shift();
+    inicializar.push(prueba2);
+    localStorage.setItem("porfavor", JSON.stringify(inicializar));
+    localStorage.removeItem("hola");
+    localStorage.removeItem("EE");
+})
